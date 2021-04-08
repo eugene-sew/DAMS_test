@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+body {
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  padding: 20px 30px;
+  background-color: rgb(9, 24, 9);
+}
+
+.navbar > .logo > h1 {
+  color: White;
+  font-size: 30px;
+  line-height: 0.5;
+}
+.navbar > .logo > h1 > .under {
+  font-size: 18px;
+  padding: 0px 10px;
+}
+
+.navlist {
+  position: relative;
+  left: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlistItem {
+  margin-left: 50px;
+}
+.navlistItem > a {
+  color: white;
+  font-size: 25px;
+}
+
+.navlistItem:hover {
+  text-decoration: underline;
+}
+
+.main {
+  position: relative;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  flex-shrink: 1;
+}
+
+.main > .alertsent,
+.main > .stakeholdersList {
+  width: 25%;
+  padding: 30px;
+}
+.alertsent > h3,
+.stakeholdersList > h3 {
+  text-align: center;
+  color: rgb(34, 34, 34) !important;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+ul.alerts {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+}
+.alertsList {
+  margin-bottom: 5px;
+  background-color: rgb(255, 184, 184);
+  padding: 20px;
+  border-radius: 5px;
+  color: rgb(34, 34, 34) !important;
+}
+.alertsList > .alertName {
+  text-transform: uppercase;
+}
+
+.alerts > .alertDesc {
+}
+
+.main > .geomap {
+  width: 50%;
+  /* background-color: #000; */
+}
+
+.main > .stakeList {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+}
+
+.stakelistItem {
+  margin-bottom: 5px;
+  background-color: rgb(181, 243, 211);
+  padding: 20px;
+  border-radius: 5px;
+  color: rgb(34, 34, 34) !important;
+}
+
+.stakelistItem > .stContact {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.partners {
+  margin-top: 50px;
+}
+ul.partnerImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.partnerImages > li > img {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+}
+
+.chatbot {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  border-radius: 25px 0px 25px 25px;
+  position: relative;
+  float: right;
+  margin-right: 30px;
+}
+
+.footer {
+  padding: 30px;
+  background-color: rgb(9, 24, 9);
+  color: white;
+}
