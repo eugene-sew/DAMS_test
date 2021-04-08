@@ -1,0 +1,70 @@
+EPA
+Headquarter Address: 
+P.O.BOX M326 MINISTRIES POST OFFICE
+Accra
+Ghana
+Phone: 
++233(0)302-664697/8, 662465, 667524
+Fax: 
++233(0)302 662690
+Web: 
+http://www.epa.gov.gh
+EMail: 
+support@epaghana.org
+
+
+Forest Commission
+Corporate Headquarters
+P. O. Box MB 434 Accra-Ghana
++233 302 401210, 401227, 401216,
++233 302 7010031 / 3 / 4
++233 302 401197 (fax)
+info.hq@fcghana.org
+
+
+Ministry of lands and natural resources
+POSTAL ADDRESS 
+Ministry of Lands and Natural Resources
+P. O. Box M 212
+Ministries-Accra
+Ghana
+TELEPHONE
++233 – 0302 – 672336
+Email 
+mlnrinfo@mlnr.gov.gh
+
+
+Forest Watch Ghana
+Address:
+No. 9 Hibiscus Rd, East Legon, Accra Ghana
+CONTACT
+Phone:
++233 302 521905
+Email:
+forestwatchghana@gmail.com
+
+
+
+##################33
+ example 0
+let mic;
+
+ function setup(){
+  let cnv = createCanvas(100, 100);
+  cnv.mousePressed(userStartAudio);
+  textAlign(CENTER);
+  mic = new p5.AudioIn();
+  mic.start();
+}
+
+function draw(){
+  background(0);
+  fill(255);
+  text('tap to start', width/2, 20);
+
+  micLevel = mic.getLevel();
+  let y = height - micLevel * height;
+  ellipse(width/2, y, 10, 10);
+}
+
+################################
